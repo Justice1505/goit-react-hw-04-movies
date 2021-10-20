@@ -11,8 +11,6 @@ const Cast = ({ movieID }) => {
     getCast(movieID).then(setCast);
   }, [movieID]);
 
-  // console.log(cast);
-
   return (
     <ul>
       {cast &&

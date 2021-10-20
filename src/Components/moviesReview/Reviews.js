@@ -10,8 +10,6 @@ const Reviews = ({ movieID }) => {
     getReviews(movieID).then(setReviews);
   }, [movieID]);
 
-  // console.log("rev", reviews);
-
   return (
     <ul>
       {reviews && reviews.length !== 0

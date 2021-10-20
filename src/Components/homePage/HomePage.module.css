@@ -1,0 +1,13 @@
+.trendingList {
+  color: black;
+}
+
+.trendingListItem {
+  color: black;
+  padding: 5px;
+  font-weight: 500;
+}
+
+.trendingListItem:hover {
+  color: rgb(133, 5, 48);
+}

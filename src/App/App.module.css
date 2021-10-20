@@ -1,0 +1,55 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+input {
+  margin: 3px;
+  width: 20%;
+  height: 30px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+li {
+  padding: 3px;
+}
+li:hover {
+  color: rgb(133, 5, 48);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+button {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5px;
+  margin-left: 5px;
+  border-radius: 5px;
+  color: black;
+  background: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: #000000 solid 1px;
+  cursor: pointer;
+}
+button:hover,
+button:focus {
+  color: white;
+  background: rgb(133, 5, 48);
+}

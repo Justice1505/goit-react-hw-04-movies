@@ -1,0 +1,51 @@
+.poster {
+  width: 300px;
+  height: 450px;
+  margin-right: 10px;
+}
+
+.navLink {
+  display: inline-block;
+  color: black;
+  margin: 5px;
+  font-weight: 500;
+}
+.navLink:hover,
+.navLink:focus {
+  font-weight: 500;
+  color: rgb(133, 5, 48);
+}
+
+.navLinkActive {
+  font-weight: 500;
+  color: rgb(133, 5, 48);
+}
+
+.goBack {
+  margin-bottom: 5px;
+}
+
+.filmWrapper {
+  display: flex;
+  margin-bottom: 15px;
+  margin-left: 3px;
+}
+
+.movieTitle {
+  margin-bottom: 20px;
+}
+
+.movieSubTitle {
+  margin: 20px 0;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.genersItem {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.additionalList {
+  margin-bottom: 10px;
+}

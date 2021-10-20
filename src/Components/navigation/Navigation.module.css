@@ -14,8 +14,7 @@
   font-weight: 400;
   color: rgb(133, 5, 48);
 }
-.navLinkActive:hover::after,
-.navLinkActive:focus::after {
+.navLinkActive::after {
   content: " ";
   position: absolute;
   display: block;

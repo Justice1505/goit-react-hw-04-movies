@@ -14,7 +14,7 @@ const MoviesPage = ({ movies }) => {
         <ul>
           {movies.map((movie) => {
             return (
-              <li key={movie.id}>
+              <li key={movie.id} className={s.searchItem}>
                 <Link
                   className={s.movieListTitle}
                   to={{

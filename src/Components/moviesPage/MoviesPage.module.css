@@ -1,3 +1,6 @@
+.searchItem:hover {
+  color: rgb(133, 5, 48);
+}
 .movieListTitle {
   padding-bottom: 5px;
 }

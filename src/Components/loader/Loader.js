@@ -3,6 +3,8 @@ import Loader from "react-loader-spinner";
 
 export default class App extends React.Component {
   render() {
-    return <Loader type="Audio" color="#00BFFF" height={100} width={70} />;
+    return (
+      <Loader type="Audio" color="rgb(133, 5, 48)" height={100} width={70} />
+    );
   }
 }

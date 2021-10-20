@@ -10,7 +10,7 @@ import {
   useRouteMatch,
 } from "react-router";
 import { NavLink } from "react-router-dom";
-// import { useParams } from "react-router";
+
 const Cast = lazy(() => import("../movieCast/Cast"));
 const Reviews = lazy(() => import("../moviesReview/Reviews"));
 
@@ -27,9 +27,6 @@ const MovieDeteilsPage = ({ movie }) => {
     history.push(location?.state?.from ?? "/");
   };
 
-  //   useEffect(() => {});
-
-  //   console.log(movieID);
   return (
     <>
       <button className={s.goBack} type="button" onClick={onGoBack}>

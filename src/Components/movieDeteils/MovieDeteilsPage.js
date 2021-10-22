@@ -102,5 +102,8 @@ const MovieDeteilsPage = ({ movie }) => {
 export default MovieDeteilsPage;
 
 MovieDeteilsPage.propTypes = {
-  movieID: PropTypes.object,
+  movie: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string,
+  }),
 };

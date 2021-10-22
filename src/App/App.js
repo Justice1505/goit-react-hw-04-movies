@@ -4,7 +4,8 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import HomeView from "../views/homeView/HomeView";
 import Header from "../Components/header/Header";
 import Loader from "../Components/loader/Loader";
-import s from "./App.module.css";
+import "./App.css";
+import shared from "../Shared/sharedData";
 const MoviesView = lazy(() =>
   import("../views/moviesView/MoviesView")
 ); /* webpackChunkName: "MoviesView"  */
@@ -22,22 +23,22 @@ const App = () => {
 
       <Suspense fallback={<Loader />}>
         <Switch>
-          <Route exact path="/">
+          <Route exact path={shared.home}>
             <HomeView />
           </Route>
 
-          <Route path="/movies/:movieID">
+          <Route path={shared.movieDetails}>
             <MovieDeteilsView />
           </Route>
 
-          <Route exact path="/movies">
+          <Route exact path={shared.movies}>
             <MoviesView />
           </Route>
 
           <Route>
             <NotFoundView />
+            <Redirect to={shared.home} />
           </Route>
-          <Redirect to="/" />
         </Switch>
       </Suspense>
     </>
